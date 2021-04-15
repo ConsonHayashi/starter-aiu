@@ -1,2 +1,2 @@
 # AIU
-The Angular project with Ionic and Universal
+The Angular project starter with Ionic and Universal
