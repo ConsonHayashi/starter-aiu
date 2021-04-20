@@ -13,7 +13,7 @@ import { IonicModule } from "@ionic/angular";
     IonicModule,
     HttpClientModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule,
+    // BrowserAnimationsModule error repeat dependency BrowserModule
   ],
   declarations:[
 
