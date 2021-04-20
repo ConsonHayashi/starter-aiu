@@ -1,0 +1,10 @@
+[Unit]
+Description=A fast starter With Angular ssr.
+
+[Service]
+PIDFile=/run/aiu.pid
+WorkingDirectory=/root/https/aiu-starter 
+ExecStart=/usr/bin/npm run serve:ssr
+
+[Install]
+WantedBy=multi-user.target
