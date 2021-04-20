@@ -14,6 +14,13 @@ import { IonicModule } from "@ionic/angular";
     ReactiveFormsModule
     
   ],
+  exports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    HttpClientModule,
+    ReactiveFormsModule
+  ],
   declarations:[
 
   ]
