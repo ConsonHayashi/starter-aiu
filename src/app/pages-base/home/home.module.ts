@@ -12,8 +12,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
-    AppShareModule,
-    HomePageRoutingModule,
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    HomePageRoutingModule
   ],
   declarations: [HomePage]
 })

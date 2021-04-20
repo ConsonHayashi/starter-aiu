@@ -5,15 +5,15 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { IonicModule } from "@ionic/angular";
 
-
+// BrowserAnimationsModule error repeat dependency BrowserModule
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    // BrowserAnimationsModule error repeat dependency BrowserModule
+    ReactiveFormsModule
+    
   ],
   declarations:[
 
