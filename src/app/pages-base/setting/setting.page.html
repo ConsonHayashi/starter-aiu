@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>设置</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content>
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <mat-list>
+    <!-- mat-list-item.user-block 用户块 -->
+    <mat-list-item class="route-user-block">
+      <!-- <img src="" class="user-img"> -->
+      <!-- div.user-img 用户头像 -->
+      <div class="user-img"></div>
+      <div>
+        <!-- div.user-name 用户名称 -->
+        <div class="user-name">{{props.username}}</div>
+        <div>
+          <!-- span.user-status 用户状态 -->
+          <span class="user-status">{{props.userState}}</span>
+        </div>
+      </div>
+      <!-- button.user-qrcode 用户二维码按钮 -->
+      <button mat-icon-button routerLink="/user/setting/user-info" class="user-qrcode">
+        <ion-icon name="qr-code-outline"></ion-icon>
+      </button>
+
+      <!-- button.route-right-icon 右向图标按钮 -->
+      <button mat-icon-button routerLink="/user/setting/user-info" class="route-right-icon">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </button>
+
+    </mat-list-item>
+  </mat-list>
+
+  <mat-list>
+    <!-- mat-list-item.route-block 导航块 -->
+    <mat-list-item class="route-block" routerLink="/user/setting/user-info">
+      <!-- div.route-block-img 导航块图片 -->
+      <div class="route-block-img">
+        <ion-icon name="cube-outline"></ion-icon>
+      </div>
+      <!-- div.route-block-text 导航块文本 -->
+      <div class="route-block-text">
+        精彩内容
+      </div>
+      <!-- ion-icon.route-right-icon 导航块右箭头 -->
+      <ion-icon name="chevron-forward-outline" class="route-right-icon"></ion-icon>
+    </mat-list-item>
+  </mat-list>
+
+
+
+  <app-qinglin-route [route]="route"></app-qinglin-route>
+
+  <app-qinglin-route [route]="logout"></app-qinglin-route>
+
+</ion-content>

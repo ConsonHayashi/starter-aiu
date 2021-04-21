@@ -14,7 +14,7 @@ export class HomeProps {
 export class HomePage extends AppShareComponent<HomeProps> implements OnInit{
 
   constructor(
-    private testService: TestService
+   
   ) {
     super();
   }
@@ -24,6 +24,6 @@ export class HomePage extends AppShareComponent<HomeProps> implements OnInit{
 
 
   test() {
-    this.testService.getImg()
+    // this.testService.getImg()
   }
 }

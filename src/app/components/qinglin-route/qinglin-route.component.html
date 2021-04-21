@@ -1,0 +1,15 @@
+<mat-list *ngIf="route">
+  <!-- mat-list-item.route-block 导航块 -->
+  <mat-list-item class="route-block" [routerLink]="route.routeBlockLinK">
+    <!-- div.route-block-img 导航块图片 -->
+    <div class="route-block-img">
+      <ion-icon *ngIf="route.routeBlockType == 'ionic'" [name]="route.routeBlockImg"></ion-icon>
+    </div>
+    <!-- div.route-block-text 导航块文本 -->
+    <div class="route-block-text">
+      {{ route.routeBlockName }}
+    </div>
+    <!-- ion-icon.route-right-icon 导航块右箭头 -->
+    <ion-icon name="chevron-forward-outline" class="route-right-icon"></ion-icon>
+  </mat-list-item>
+</mat-list>

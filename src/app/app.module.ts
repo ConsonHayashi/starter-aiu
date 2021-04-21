@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommonModule, HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { AppShareModule } from './commons/app.share.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MaterialModule } from './app-material.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,7 +24,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     IonicModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MaterialModule
 ],
   providers: [
     // { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },

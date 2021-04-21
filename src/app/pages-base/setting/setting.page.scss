@@ -1,0 +1,63 @@
+// mat-list-item.user-block 用户块
+mat-list-item.route-user-block {
+  margin: 10px 0;
+  position: relative;
+  color: black;
+  // div.user-img 用户头像
+  div.user-img {
+      left: 10px;
+      width: 60px;
+      height: 60px;
+      background: #e3e3e3;
+      border-radius: 5px;
+      margin-right: 10px;
+  }
+
+  // div.user-name 用户名称
+  div.user-name {
+      font-size: 24px;
+  }
+
+  // span.user-status 用户状态 
+  span.user-status {}
+
+  // ion-icon.user-qrcode 用户二维码
+  ion-icon.user-qrcode {
+      position: absolute;
+      right: 50px;
+  }
+  // button.user-qrcode 用户二维码按钮
+  button.user-qrcode {
+      position: absolute;
+      right: 50px;
+  }
+
+}
+
+// mat-list-item.route-block 导航块
+mat-list-item.route-block {
+  position: relative;
+  color: black;
+  // div.route-block-img 导航块图片
+  div.route-block-img {
+      line-height: 100%;
+      font-size: 20px;
+      margin-right: 10px;
+  }
+
+  // div.route-block-text 导航块文本 
+  div.route-block-text {}
+
+}
+
+// ion-icon.right-icon 右向图标
+ion-icon.route-right-icon {
+  position: absolute;
+  right: 22px;
+}
+
+// button.route-right-icon 右向图标按钮
+button.route-right-icon {
+  position: absolute;
+  right: 10px;
+}

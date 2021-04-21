@@ -7,12 +7,12 @@ import { IonicModule } from '@ionic/angular';
 import { LogupPageRoutingModule } from './logup-routing.module';
 
 import { LogupPage } from './logup.page';
+import { AppShareModule } from 'src/app/commons/app.share.module';
+import { QinglinInputComponent } from 'src/app/components/qinglin-input/qinglin-input.component';
 
 @NgModule({
   imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
+    AppShareModule,
     LogupPageRoutingModule
   ],
   declarations: [LogupPage]

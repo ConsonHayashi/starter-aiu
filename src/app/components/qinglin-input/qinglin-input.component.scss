@@ -1,0 +1,89 @@
+mat-list {
+    padding: 0;
+    --padding-top: 0;
+    --padding-bottom: 0;
+}
+
+mat-list-item {
+    --background: #111a2b;
+    position: relative;
+
+    // ion-input.form-control 表单控制，占全部宽度
+    ion-input.form-control {
+        
+        width: 100%;
+        --padding-bottom: 12px;
+        --padding-end: 24px;
+        --padding-start: 24px;
+        --padding-top: 12px;
+        padding: 12px 24px;
+        --background: #e8f0fe;
+        background:#e8f0fe;
+        border-radius: 5px;
+        font-size: 16px;
+        appearance: none;
+        --webkit-appearance: none;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+
+    ion-input.form-control:focus, ion-input.form-control:hover {
+        box-shadow: inset 0 0 0 0.15rem #5288e8;
+    }
+    // input.form-control 表单控制，占全部宽度
+    input.form-control {
+        color: black;
+        --color: black; 
+        width: 100%;
+        --padding-bottom: 12px;
+        --padding-end: 24px;
+        --padding-start: 24px;
+        --padding-top: 12px;
+        padding: 12px 24px;
+        --background: #e8f0fe;
+        background:#e8f0fe;
+        border-radius: 5px;
+        font-size: 16px;
+        appearance: none;
+        outline: none;
+        --webkit-appearance: none;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        -webkit-user-select: text;
+        user-select: text;
+    }
+
+    input.form-control:focus, ion-input.form-control:hover {
+        box-shadow: inset 0 0 0 0.1rem #5288e8;
+    }
+
+
+    ion-icon {
+        --color: #ffffff;
+    }
+
+    // ion-icon.form-control 表单控制，位于右下角
+    ion-icon.form-control {
+       
+        position: absolute;
+        right: 30px;
+        width: 24px;
+        height: 30px;
+        color: black;
+        cursor: pointer;
+
+    }
+
+    label {
+        font-size: 16px;
+        color: #6a81ac;
+    }
+    .label {
+        font-size: 16px;
+        color: #6a81ac;
+    }
+
+    ion-button{
+        height: 100%;
+    }
+
+
+}

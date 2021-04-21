@@ -1,9 +1,60 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>pass</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content fullscreen="true">
+  <!-- div.login-form 登陆的表单 -->
 
-<ion-content>
+  <ion-grid>
+    <!-- ion-row.place-row 一行的占位，用来撑起盒子 -->
+    <ion-row [class.palace-row]="!isResetShow" [class.palace-reset-row]="isResetShow"></ion-row>
+
+    <ion-row>
+      <ion-col size-sm="12" size-md="6" offset-md="3">
+        <mat-list lines="none" mode="ios">
+          <!-- mat-list-item.form-title 登陆标题 -->
+          <mat-list-item class="form-title">
+            <img src="/assets/lock.svg" alt="">
+            <span>登陆区域</span>
+          </mat-list-item>
+          <!-- mat-list-item.login-taber 登陆、注册的切换器 -->
+          <mat-list-item class="login-taber">
+            <a routerLink="/login" class="link-to">
+              登陆
+
+            </a>
+            &nbsp;or&nbsp;
+            <a routerLink="/logup" class="link-to">
+              注册
+            </a>
+          </mat-list-item>
+        </mat-list>
+      </ion-col>
+    </ion-row>
+    <form class="form" [formGroup]="resetForm" (ngSubmit)="reset()">
+      <ion-row>
+        <ion-col size-sm="12" size-md="6" offset-md="3">
+          <app-qinglin-input labelStr="用户名" type="text" [control]="resetForm.get('username')">
+          </app-qinglin-input>
+          <app-qinglin-input labelStr="邮箱" type="email" [control]="resetForm.get('email')">
+          </app-qinglin-input>
+          <app-qinglin-input lableStr="验证码" type="verification-code" (clickVerification)="getVerificationCode()"
+            [control]="resetForm.get('code')">
+          </app-qinglin-input>
+          <app-qinglin-input labelStr="密码" type="password" [control]="resetForm.get('password')">
+          </app-qinglin-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size-sm="12" size-md="6" offset-md="3">
+          <ion-button expand="block" type="submit">
+            更改
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-grid>
+
+  <small id="beian"><a href="http://beian.miit.gov.cn" target="blank">豫ICP备19030707号</a></small>
+  <!-- small#copy 版权声明 -->
+  <small id="copy"><a href="#">Copyright©2020-2021 DongQinglin. All Rights Reserved.</a></small>
+
+
 
 </ion-content>

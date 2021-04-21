@@ -1,0 +1,41 @@
+
+
+
+// mat-list-item.route-block 导航块
+mat-list-item.route-block {
+    position: relative;
+    color: black;
+    outline: black;
+
+    // div.route-block-img 导航块图片
+    div.route-block-img {
+        line-height: 100%;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+
+    // div.route-block-text 导航块文本 
+    div.route-block-text {}
+
+    a{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+}
+
+
+// ion-icon.right-icon 右向图标
+ion-icon.route-right-icon {
+    position: absolute;
+    right: 22px;
+}
+
+// button.route-right-icon 右向图标按钮
+button.route-right-icon {
+    position: absolute;
+    right: 10px;
+}
